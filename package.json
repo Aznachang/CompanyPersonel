@@ -1,6 +1,6 @@
 {
-  "name": "Sigfig_FE_RPT",
-  "description": "Sigfig Front end programming test",
+  "name": "CompanyPersonel",
+  "description": "AngularJS CompanyPersonel FrontEnd",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
