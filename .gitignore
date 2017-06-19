@@ -1,0 +1,5 @@
+.eslintrc
+node_modules/
+server/npm-debug.log
+npm-debug.log
+data/

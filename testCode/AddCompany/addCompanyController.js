@@ -13,7 +13,6 @@ app.controller('addCompany', function($scope, $location, $http) {
 
 app.directive('createCompanyForm', function() {
   return {
-    // ../AddCompany/
     templateUrl: './AddCompany/create-company-form.html'
   };
 });
