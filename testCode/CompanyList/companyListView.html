@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title"> Companies</h2>
+  </div>
+  <div class="panel-body">
+    <div class = "row" ng-if="companies.length === 0">
+      <span> No Companies Exist! </span>
+    </div>
+    <!-- <div class="row"> -->
+      <div ng-repeat="company in companies">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><a href="#/company/{{company._id}}">{{company.name}}</h3></a>
+          </div>
+          <div class="panel-body">
+            <b>Address</b><br>
+            <p>{{company.address}}</p>
+            <b>Revenue</b><br>
+            <p>{{company.revenue}}</p>
+            <b>Phone</b><br>
+            <p>{{company.phone}}</p>
+          </div>
+          <div class="panel-footer">
+            <a href="#/companies/{{company._id}}/people">People who work here</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

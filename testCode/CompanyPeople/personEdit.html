@@ -1,0 +1,18 @@
+<a href = '#/company/{{personDetail.id}}/people'><b>Go Back</b></a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Person</h3>
+  </div>
+  <div class="panel-body">
+    <form ng-submit="updatePersonDetail()" novalidate>
+      <b>Name</b><br>
+      <input type="textbox" ng-model="personDetail.name" value="">
+      <br><b>Email</b><br>
+      <input type="textbox" ng-model="personDetail.email" value="">
+      <br><br><p><input type="submit" value="Save"></p>
+    </form>
+  </div>
+  <div class ='panel-footer'>
+  <a href="#/companies/">Back To Main Page</a>
+  </div>
+</div>

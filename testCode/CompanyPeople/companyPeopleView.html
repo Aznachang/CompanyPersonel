@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">People</h3>
+  </div>
+  <div class="panel-body">
+    <div ng-repeat="person in people">
+      <p>
+        <a href="#/company/{{person._id}}/people">
+        {{person.name}}
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class ='panel-footer'>
+  <a href="#/companies/">Back To Main Page</a>
+  </div>
+</div>

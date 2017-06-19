@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="#/">Go Back</a></h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div>
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <h3><a href="#/company/{{personDetail.id}}/person/edit">{{personDetail.name}}</a></h3>
+            <b>Email</b><br>
+            <p>{{personDetail.email}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer"><button ng-click='deletePerson()'>Delete {{personDetail.name}}</button></div>
+</div>

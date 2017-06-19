@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Create New Company</h3>
+  </div>
+  <div class="panel-body">
+    <form name='newCompanyForm' id='addCompanyForm' ng-submit="addCompany()" novalidate>
+      <div class='field'>
+      <b>Name</b><br>
+      <input class="col-sm-12 col-md-12 ng-scope ng-pristine ng-invalid ng-invalid" type="textbox" ng-model="company.name" name="companyName" required><br>
+      <div ng-messages='newCompanyForm.companyName.$error'>
+        <div ng-message='required'>Company Name is required...</div>
+      </div>
+      <br><b>Address</b><br>
+      <input class="col-sm-12 col-md-12" required  type="textbox" ng-model="company.address"><br>
+      <br><b>Revenue</b><br>
+      <input class="col-sm-12 col-md-12" required  type="textbox" ng-model="company.revenue"><br>
+      <br><b>Phone</b><br>
+      <input class="col-sm-12 col-md-12" required  type="textbox" ng-model="company.phone"><br><br>
+      </div>
+      <input type="submit" value="Save">
+    </form>
+  </div>
+</div>

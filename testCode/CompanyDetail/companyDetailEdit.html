@@ -1,0 +1,22 @@
+<a href= '#/company/{{companyDetail.id}}'><b>Go Back</b></a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Company</h3>
+  </div>
+  <div class="panel-body">
+    <form ng-submit="updateCompanyDetail()" novalidate>
+      <b>Name</b><br>
+      <input type="textbox" ng-model="companyDetail.name" value="">
+      <br><b>Address</b><br>
+      <input type="textbox" ng-model="companyDetail.address" value="">
+      <br><b>Revenue</b><br>
+      <input type="textbox" ng-model="companyDetail.revenue" value="">
+      <br><b>Phone</b><br>
+      <input type="textbox" ng-model="companyDetail.phone" value=""><br>
+      <br><p><input type="submit" value="Save"></p>
+    </form>
+  </div>
+  <div class ='panel-footer'>
+  <a href="#/companies/">Back To Main Page</a>
+  </div>
+</div>

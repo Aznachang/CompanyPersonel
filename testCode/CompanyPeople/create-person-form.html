@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Create New Person</h3>
+  </div>
+  <div class="panel-body">
+    <form name='newPersonForm' id="addPersonForm" ng-submit="addPerson()" novalidate>
+      <div class='field'>
+        <b>Name</b><br>
+        <input class="col-sm-12 col-md-12 ng-scope ng-pristine ng-invalid ng-invalid " type="textbox" ng-model="companyPerson.name" name='personName' required><br>
+        <div ng-messages='newPersonForm.personName.$error'>
+          <div ng-message='required'>Name is required...</div>
+        </div>
+        <br><b>Email</b><br>
+        <input class="col-sm-12 col-md-12" required type="email" ng-model="companyPerson.email" name='personEmail'><br>
+        <div ng-messages='newPersonForm.personEmail.$error'>
+          <div ng-message='required'>Email is required...</div>
+          <div ng-message='email'>ex: abc@gmail.com</div>
+        </div>
+        <br><b>Company </b>
+        <select ng-model="selected">
+          <option ng-repeat="company in companies">{{company.name}}</option>
+        </select><br><br>
+      </div>
+      <input type="submit" value="Save">
+    </form>
+  </div>
+</div>
