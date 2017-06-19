@@ -4,7 +4,7 @@ app.factory('getCompanies', function ($http, $location, $routeParams) {
       method: 'GET',
       url: '/companies',
     }).then(res => {
-      console.log('getList-', + JSON.stringify(res.data));
+      // console.log('getList-', + JSON.stringify(res.data));
       return res.data;
     });
   };
@@ -41,5 +41,4 @@ app.factory('getCompanies', function ($http, $location, $routeParams) {
 
   return { getList, createCompany }
 
-  // return { getList, createCompany, importCompanies, importPeople };
 });
