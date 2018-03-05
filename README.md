@@ -11,6 +11,9 @@ Features:
 7. Update Company / Personel info
 
 Notes:
-1. npm run start
-2. npm run mongo
-3. mongo
+1. npm run start - spins up mongo and then server.js file
+2. npm run mongo - spins up 'Mongod' command
+3. npm run server - spins up backend server
+
+To Run the App: 
+home-page: http://localhost:3001/testCode/#/
